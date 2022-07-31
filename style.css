@@ -207,6 +207,80 @@ footer a:hover {
     font-size: 30px;
 }
 
+/* contact */
+.contact-content {
+    text-align: center;
+    background-color: #ff7979;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+}
+
+form {
+    margin: 10px 0;
+    
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 100%;
+}
+
+.form-control input {
+    font-size: 18px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+.form-control textarea {
+    font-size: 18px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: 2px #fff solid;
+    display: block;
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+}
+
+.checkbox {
+    margin-bottom: 30px;
+    width: 15px;
+    height: 15px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #f06969;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
 @media (min-width: 786px) {
     .container {
         width: 600px;
