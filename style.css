@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,500&family=Nunito&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
 
 * {
     margin: 0;
@@ -67,10 +67,77 @@ body {
     transform-origin: top left;
 }
 
-h1 {
-    font-family: 'BhuTuka Expanded One', cursive;
+.container.show-nav {
+    transform: translateX(0);
+    transition-delay: 0.3s;
 }
 
+nav {
+    position: fixed;
+    bottom: 40px;
+    left:0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.content small {
+    color: rgb(48, 47, 47);
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.content h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.content p {
+    margin: 20px 0 30px 0;
+    color: #333;
+    line-height: 1.5;
+}
 .content img {
  max-width: 100%;
 }
