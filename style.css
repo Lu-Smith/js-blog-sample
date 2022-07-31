@@ -150,6 +150,45 @@ nav ul li + li + li {
  max-width: 100%;
 }
 
+
+
+footer {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer a {
+  color: rgb(150, 146, 146);
+  text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+  }
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.social-media li {
+    padding: 20px;
+}
+
+.social-media a:hover {
+    color: white;
+}
+
 @media (min-width: 786px) {
     .container {
         width: 600px;
