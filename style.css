@@ -13,17 +13,19 @@ body {
     color: #222;
 }
 
+
+
 .container {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
     width: 100vw;
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 50px;
 }
 
 .container.show-nav {
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
 }
 
 .circle-container {
@@ -41,9 +43,10 @@ body {
     transition: transform 0.5s linear;
 }
 
-.container.show-nav {
-    transform: rotate(-70deg);
+.container.show-nav .circle {
+    transform: rotate(-90deg);
 }
+
 
 .circle button {
     cursor: pointer;
@@ -57,6 +60,7 @@ body {
     color: #fff;
 }
 
+
 .circle button:focus {
     outline: none;
 }
@@ -66,8 +70,8 @@ body {
 }
 
 .circle button#close {
-    top: 50%;
-    transform: rotate(40deg);
+    top: 60%;
+    transform: rotate(90deg);
     transform-origin: top left;
 }
 
@@ -144,4 +148,11 @@ nav ul li + li + li {
 }
 .content img {
  max-width: 100%;
+}
+
+@media (min-width: 786px) {
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
 }
