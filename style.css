@@ -97,7 +97,15 @@ nav ul li {
     color: white;
     margin: 40px 0;
     transform: translateX(-100%);
-    transition: transform 0.4s ease-in;
+    
+    transition: 200ms all ease-in-out, transform 0.4s ease-in;
+
+}
+
+nav ul li:hover {
+    position: relative;
+    top: -5px;
+    font-size: 20px;
 }
 
 nav ul li i {
@@ -166,6 +174,7 @@ footer {
 footer a {
   color: rgb(150, 146, 146);
   text-decoration: none;
+  transition: 200ms all ease-in-out;
 }
 
 footer a:hover {
@@ -183,10 +192,17 @@ footer a:hover {
 
 .social-media li {
     padding: 20px;
+    line-height: 40px;
 }
 
+.social-media a{
+    transition: 200ms all ease-in-out;
+}
 .social-media a:hover {
     color: white;
+    position: relative;
+    top: -5px;
+    font-size: 30px;
 }
 
 @media (min-width: 786px) {
