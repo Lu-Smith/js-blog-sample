@@ -319,6 +319,7 @@ form {
     margin: 0 auto;
     display: block;
     z-index: 100;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
