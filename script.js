@@ -16,3 +16,21 @@ labels.forEach(label => {
        .map((letter, idx) => `<span style="transition-delay:${idx * 60}ms">${letter}</span>`)
        .join(``)
 })
+
+/* about page */
+
+const boxesContainer = document.getElementById(`boxes`);
+const btnChange = document.getElementById(`btn-change`);
+
+function createBoxes() {
+    for(let i = 0; i < 4; i++) {
+        for(let j = 0; j < 4; j++) {
+            const box = document.createElement(`div`);
+            box.classList.add(`box`);
+            box.style.backgroundPosition = `${-j * 85}px ${-i * 85}px`;
+            boxesContainer.appendChild(box);
+        }
+    }
+}
+
+createBoxes();
