@@ -390,13 +390,16 @@ form {
     justify-content: space-around;
     height: 340px;
     width: 340px;
-    transition: 0.4s ease;
+    transition: 0.6s ease;
     margin-top: 60px;
+    
   }
   
   .boxes-second.big-second {
       width: 480px;
       height: 480px;
+      background-color: rgb(240, 202, 36);
+      border-radius: 300px;
   }
   
   .boxes-second.big-second .box-second {
@@ -411,28 +414,31 @@ form {
       height: 42.5px;
       width: 42.5px;
       transition: 0.8s ease;
+      border-radius: 3px;
   }
   
   .box-second::after {
       content: "";
-      background-color: #305ec2;
+      background-color:#81a6f5;
       position: absolute;
-      top: 8px;
-      right: -15px;
+      top: 4.6px;
+      right: -10px;
       height: 100%;
-      width: 15px;
+      width: 10px;
       transform: skewY(45deg);
+      border-radius: 2px;
   }
   
   .box-second::before {
       content: "";
-      background-color: #5a88eb;
+      background-color:#234794;
       position: absolute;
-      bottom: -15px;
-      left: 8px;
+      bottom: -10px;
+      left: 4.6px;
       width: 100%;
-      height: 15px;
+      height: 10px;
       transform: skewX(45deg);
+      border-radius: 2px;
   }
 
   .container.about {
