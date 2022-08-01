@@ -36,3 +36,22 @@ function createBoxes() {
 }
 
 createBoxes();
+
+const boxesContainerSecond = document.getElementById(`boxes-second`);
+const btnChangeSecond = document.getElementById(`btn-change-second`);
+
+btnChangeSecond.addEventListener(`click`, () => boxesContainerSecond.classList.toggle(`big-second`));
+
+function createBoxesSecond() {
+    for(let i = 0; i < 8; i++) {
+        for(let j = 0; j < 8; j++) {
+            const boxSecond = document.createElement(`div`);
+            boxSecond.classList.add(`box-second`);
+            boxSecond.style.backgroundPosition = `${-j * 42.5}px ${-i * 42.5}px`;
+            boxesContainerSecond.appendChild(boxSecond);
+        }
+    }
+}
+
+createBoxesSecond();
+

@@ -333,7 +333,6 @@ form {
 }
 
 .boxes { 
-
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -383,6 +382,62 @@ form {
     height: 15px;
     transform: skewX(45deg);
 }
+
+.boxes-second { 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 340px;
+    width: 340px;
+    transition: 0.4s ease;
+    margin-top: 60px;
+  }
+  
+  .boxes-second.big-second {
+      width: 480px;
+      height: 480px;
+  }
+  
+  .boxes-second.big-second .box-second {
+      transform: rotateZ(135deg);
+  }
+  
+  .box-second {
+      background-image: url("img/Crypto\ Moo\ 10.2.jpg");
+      background-repeat: no-repeat;
+      background-size: 340px 340px;
+      position: relative;
+      height: 42.5px;
+      width: 42.5px;
+      transition: 0.8s ease;
+  }
+  
+  .box-second::after {
+      content: "";
+      background-color: #305ec2;
+      position: absolute;
+      top: 8px;
+      right: -15px;
+      height: 100%;
+      width: 15px;
+      transform: skewY(45deg);
+  }
+  
+  .box-second::before {
+      content: "";
+      background-color: #5a88eb;
+      position: absolute;
+      bottom: -15px;
+      left: 8px;
+      width: 100%;
+      height: 15px;
+      transform: skewX(45deg);
+  }
+
+  .container.about {
+    max-height: 2200px;
+  }
 
 
 @media (min-width: 786px) {
