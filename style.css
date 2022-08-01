@@ -302,6 +302,57 @@ form {
     transform: translateY(-30px);
 }
 
+
+/* about */
+
+.magic {
+    background-color: #e84a5f;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 12px 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 3px rgba(252, 82, 125, 0.5);
+    margin: 0 auto;
+    display: block;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+.magic:focus {
+    outline: none;
+}
+
+.magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.boxes { 
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 340px;
+  width: 340px;
+}
+
+.boxes.big {
+    width: 420px;
+    height: 420px;
+}
+
+.box {
+    background: red;
+    height: 85px;
+    width: 85px;
+}
+
+
 @media (min-width: 786px) {
     .container {
         width: 600px;
