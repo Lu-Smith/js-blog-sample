@@ -339,6 +339,7 @@ form {
   justify-content: space-around;
   height: 340px;
   width: 340px;
+  transition: 0.4s ease;
 }
 
 .boxes.big {
@@ -346,10 +347,40 @@ form {
     height: 420px;
 }
 
+.boxes.big .box {
+    transform: rotateZ(360deg);
+}
+
 .box {
-    background: red;
+    background-image: url("https://media.giphy.com/media/UW7dETXIAsCK5m0tkM/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 340px 340px;
+    position: relative;
     height: 85px;
     width: 85px;
+    transition: 0.4s ease;
+}
+
+.box::after {
+    content: "";
+    background-color: #ff847c;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before {
+    content: "";
+    background-color: #e84a5f;
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    width: 100%;
+    height: 15px;
+    transform: skewX(45deg);
 }
 
 
