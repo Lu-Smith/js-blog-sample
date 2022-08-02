@@ -400,6 +400,7 @@ form {
       height: 480px;
       background-color: rgb(240, 202, 36);
       border-radius: 300px;
+      padding-top: 32px;
   }
   
   .boxes-second.big-second .box-second {
@@ -414,35 +415,43 @@ form {
       height: 42.5px;
       width: 42.5px;
       transition: 0.8s ease;
-      border-radius: 3px;
+      border-radius: 5px;
+      
   }
   
   .box-second::after {
       content: "";
-      background-color:#81a6f5;
+      background-color: rgb(248, 221, 100);
+      border-radius: 300px;;
       position: absolute;
       top: 4.6px;
       right: -10px;
       height: 100%;
       width: 10px;
       transform: skewY(45deg);
-      border-radius: 2px;
+      border-radius: 5px;
   }
   
   .box-second::before {
       content: "";
-      background-color:#234794;
+      background-color:rgb(221, 186, 32);
+      border-radius: 300px;;
       position: absolute;
       bottom: -10px;
-      left: 4.6px;
+      left: 4px;
       width: 100%;
       height: 10px;
       transform: skewX(45deg);
-      border-radius: 2px;
+      border-radius: 5px;
   }
 
   .container.about {
     max-height: 2200px;
+  }
+
+  .magic-second {
+    background-color:black;
+    box-shadow: 0 3px rgba(50, 50, 51, 0.5);
   }
 
 
