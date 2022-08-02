@@ -56,11 +56,81 @@ function createBoxesSecond() {
 createBoxesSecond();
 
 const containerThird = document.getElementById(`container-third`);
+const btnChangeThird = document.getElementById(`btn-change-third`)
 const colors = [`#ff5d9e`, `#8f71ff`, `#82acff`, `#8bffff`, `#fdfdcb`];
+const colorsChange = [`#ff5200`, `#0c9cee`, `#a1f480`, `#851de0`, `#f1fa3c`, `#eda045`];
 const SQUARES = 500;
+let click = false;
 
-for(let i = 0; i < SQUARES; i++) {
-    const square = document.createElement(`div`);
-    square.classList.add(`square`);
-    containerThird.appendChild(square);
+
+
+function drawSquares() {
+
+    for(let i = 0; i < SQUARES; i++) {
+        const square = document.createElement(`div`);
+        square.classList.add(`square`);
+        square.addEventListener(`mouseover`, () => setColor(square));
+        square.addEventListener(`mouseout`, () => removeColor(square));
+        containerThird.appendChild(square);
+    };
+ 
+
+    
+};
+
+btnChangeThird.addEventListener(`click`, changeOnClickDrawSquares);
+
+drawSquares();
+
+function changeOnClickDrawSquares() {
+    click ? returnDrawSquares() : changeDrawSquares();
+}
+
+function changeDrawSquares() {
+    getRandomColor = getRandomColorChange;
+    removeColor = removeColorChange;   
+    click = true;
+}
+
+function returnDrawSquares() {
+    getRandomColor = getRandomColorReturn;
+    removeColor = removeColorReturn;
+    click = false;
+}
+
+
+
+
+function setColor(element) {
+    const color = getRandomColor();
+    element.style.background = color;
+    element.style.boxShadow = `0, 0 2px ${color}, 0 0 10px ${color}`;
+}
+
+function removeColor(element) {
+    element.style.background = `#1d1d1d`;
+    element.style.boxShadow = `0, 0, 2px, #000`;
+}
+
+function getRandomColor() {
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function getRandomColorChange() {
+    return colorsChange[Math.floor(Math.random() * colors.length)];
+}
+
+function removeColorChange(element) {
+    element.style.background = `#ff5200`;
+    element.style.boxShadow = `0, 0, 2px, #fff`;
+    
+}
+
+function removeColorReturn(element) {
+    element.style.background = `#1d1d1d`;
+    element.style.boxShadow = `0, 0, 2px, #000`;
+}
+
+function getRandomColorReturn() {
+    return colors[Math.floor(Math.random() * colors.length)];
 }

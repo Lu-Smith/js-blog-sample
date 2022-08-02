@@ -457,6 +457,13 @@ form {
 
   /* about third animation */
 
+  .third-instruction {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+ 
+  }
   .container-third {
     display: flex;
     align-items: center;
@@ -464,14 +471,13 @@ form {
     flex-wrap: wrap;
   }
 
-
   .square {
-    background-color: #1d1d1d;
+    background-color: #3a3939;
     box-shadow: 0 0 2px #000;
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     margin: 2px;
-    transition:  2s ease;
+    transition: 4s ease;
   }
 
   .square:hover {
