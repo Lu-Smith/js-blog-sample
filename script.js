@@ -55,3 +55,12 @@ function createBoxesSecond() {
 
 createBoxesSecond();
 
+const containerThird = document.getElementById(`container-third`);
+const colors = [`#ff5d9e`, `#8f71ff`, `#82acff`, `#8bffff`, `#fdfdcb`];
+const SQUARES = 500;
+
+for(let i = 0; i < SQUARES; i++) {
+    const square = document.createElement(`div`);
+    square.classList.add(`square`);
+    containerThird.appendChild(square);
+}
