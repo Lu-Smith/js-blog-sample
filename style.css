@@ -159,7 +159,7 @@ nav ul li + li + li {
 
 .content section {
  position: relative;
- width: 600px;
+ width: 500px;
  height: 400px;
  transform-style: preserve-3d;
  perspective: 500px;
@@ -181,7 +181,7 @@ section .banner {
     position: relative;
     top: -80px;
     left: 0;
-    width: 600px;
+    width: 500px;
     height: 400px;
     overflow: hidden;
     display: flex;
@@ -191,14 +191,14 @@ section .banner {
 section .blocks {
     position: relative;
     display: block;
-    width: 60px;
+    width: 50px;
     height: 40px;
     animation-name: animate;
     animation-duration: 6s;
     animation-delay: 2s;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 600px 400px;
+    background-size: 500px 400px;
     animation-iteration-count: 5;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: both;
@@ -569,7 +569,7 @@ form {
   }
 
 
-@media (min-width: 786px) {
+@media (min-width: 700px) {
     .container {
         width: 600px;
         margin: 0 auto;

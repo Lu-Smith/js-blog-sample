@@ -33,7 +33,7 @@ function imageAnimation () {
         for(let j = 0; j < 10; j++) {
         const block = document.createElement(`div`);
         block.classList.add(`blocks`);
-        block.style.backgroundPosition = `${-j * 60}px ${-i * 40}px`;
+        block.style.backgroundPosition = `${-j * 50}px ${-i * 40}px`;
         bannerBox.appendChild(block);
 
         
