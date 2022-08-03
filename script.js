@@ -24,6 +24,22 @@ footerLinks.forEach(link => {
        .join(``)
 })
 
+/* image animation */
+
+const banner = document.getElementById(`banner`);
+const blocks = document.getElementsByClassName(`blocks`);
+for ( let i = 0; i < 10; i++) {
+    for(let j = 0; j < 10; j++) {
+    const block = document.createElement(`div`);
+    block.classList.add(`blocks`);
+    block.style.backgroundPosition = `${-j * 60}px ${-i * 40}px`;
+    banner.appendChild(block);
+
+    }
+    
+}
+
+
 /* contact page */
 
 const labels = document.querySelectorAll(`.form-control label`) 
