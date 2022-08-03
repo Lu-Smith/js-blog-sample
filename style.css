@@ -188,7 +188,7 @@ section .banner {
     flex-wrap: wrap;
 }
 
-.blocks {
+section .blocks {
     position: relative;
     display: block;
     width: 60px;

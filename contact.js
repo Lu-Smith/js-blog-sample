@@ -24,23 +24,15 @@ footerLinks.forEach(link => {
        .join(``)
 })
 
-/* image animation */
 
-const bannerBox = document.getElementById(`banner`);
+/* contact page */
 
-function imageAnimation () {
-    for ( let i = 0; i < 10; i++) {
-        for(let j = 0; j < 10; j++) {
-        const block = document.createElement(`div`);
-        block.classList.add(`blocks`);
-        block.style.backgroundPosition = `${-j * 60}px ${-i * 40}px`;
-        bannerBox.appendChild(block);
+const labels = document.querySelectorAll(`.form-control label`) 
 
-        
-        }
-    }    
-}
-
-imageAnimation ();
-
+labels.forEach(label => {
+    label.innerHTML = label.innerText
+       .split(``)
+       .map((letter, idx) => `<span style="transition-delay:${idx * 60}ms">${letter}</span>`)
+       .join(``)
+})
 
