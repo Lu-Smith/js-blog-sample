@@ -568,6 +568,116 @@ form {
     transition-duration: 0s;
   }
 
+  @media (max-width: 786px) {
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+
+
+
+    .content section {
+        width: 400px;
+        height: 300px;
+       }
+       
+       .content section h2 {
+           line-height: 300px;
+           font-size: 40px;
+       }
+       section .banner {
+           position: relative;
+           top: -80px;
+           left: 0;
+           width: 400px;
+           height: 300px;
+       }
+
+       section .blocks {
+        width: 40px;
+        height: 30px;
+        background-size: 400px 300px;
+    }
+
+    .content .portfolio span {
+        font-size: 17px;
+    }
+    
+    .content .portfolio:hover span {
+        font-size: 20px;
+    }
+
+    
+    /* contact */
+    .contact-content {
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        margin: 20px 0 30px;
+    }
+    
+    .form-control label span {
+        font-size: 16px;
+    }
+
+    .form-control input {
+        font-size: 16px;
+        padding: 12px 8px;
+    }
+    
+    .form-control textarea {
+        font-size: 16px;
+        padding: 12px 12px;
+    }
+
+    .checkbox {
+        width: 12px;
+        height: 12px;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 16px;
+        line-height: 18px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* about */
+
+    .boxes-second.big-second { 
+        width: 380px;
+        padding-top: 10px;
+      }
+
+    .container-third {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 400px;
+        margin: 0 auto;
+      }
+
+    /* nav */
+    nav {
+        position: fixed;
+        top: 500px;
+        left:0;
+        z-index: 100;
+    }
+  }
 
 @media (max-width: 480px) {
     .container {
@@ -626,5 +736,14 @@ form {
     .social-media ul {
         margin: 0;
         font-size: 20px;
+    }
+
+    /* contact */
+    .contact-content {
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 290px;
+        margin: 0;
+    
     }
 }
