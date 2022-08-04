@@ -746,4 +746,23 @@ form {
         margin: 0;
     
     }
+
+    /* about */
+
+    .about-content {
+        position: relative;
+        right: 46px;
+    }
+    .boxes.big {
+        width: 360px;
+        height: 360px;
+    }
+
+    .boxes-second.big-second { 
+        width: 382px;
+      }
+
+    .container-third {
+        width: 350px;
+      }
 }
