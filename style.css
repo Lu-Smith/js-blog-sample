@@ -173,7 +173,7 @@ nav ul li + li + li {
     height: 80px;
     text-align: center;
     line-height: 400px;
-    font-size: 10vw;
+    font-size: 60px;
     color: #fff;
     font-weight: 700;
 }
@@ -202,9 +202,6 @@ section .blocks {
     animation-iteration-count: 5;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: both;
-    
-    
- 
 }
 
 @keyframes animate {
@@ -298,6 +295,7 @@ footer a:hover {
     border-radius: 15px;
     padding: 30px;
     color: white;
+    max-width: 600px
 }
 
 form {
@@ -553,6 +551,8 @@ form {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
   }
 
   .square {
@@ -569,13 +569,62 @@ form {
   }
 
 
-@media (min-width: 700px) {
+@media (max-width: 480px) {
     .container {
-        width: 600px;
+        width: 480px;
         margin: 0 auto;
     }
 
-    .content section h2 {
-        font-size: 60px;
+    .content h1 {
+        font-size: 28px;
+    }
+    
+    .content h3 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .content p {
+        margin: 18px 0 28px 0;
+        line-height: 1.8;
+        max-width: 85%;
+        font-size: 14px;
+    }
+
+    .content section {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: -40px
+       }
+       
+       .content section h2 {
+           line-height: 200px;
+       }
+       section .banner {
+           position: relative;
+           top: -80px;
+           left: 0;
+           width: 300px;
+           height: 200px;
+       }
+
+       section .blocks {
+        width: 30px;
+        height: 20px;
+        background-size: 300px 200px;
+    }
+
+    .content .portfolio span {
+        font-size: 16px;
+    }
+    
+    .content .portfolio:hover span {
+        font-size: 20px;
+    }
+
+    .social-media ul {
+        margin: 0;
+        font-size: 20px;
     }
 }
